@@ -7,7 +7,7 @@ export default function App() {
   return (
     <PaperProvider>
       <View style={styles.container}>
-        <Text>Hello World</Text>
+        <Text style={styles.head}>Currency Converter</Text>
         <Converter />
         <StatusBar style="auto" />
       </View>
@@ -22,4 +22,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  head:{
+    fontWeight: 'bold',
+    fontSize:36
+  }
 });
